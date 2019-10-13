@@ -4,12 +4,11 @@ class Anagram
   
   def initialize(word)
     @word = %w(word)
-    
   end
   
-  # def match
+  def match
   
   
-  # end
+  end
 
 end
