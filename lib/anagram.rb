@@ -6,19 +6,19 @@ class Anagram
     @word = word
   end
   
-  def match
-    @word.each do |words|
-      if words.sort == @words.sort
-        p words
-      end
-    end
-    matched_words = []
-    some_words.each do |new_word|
-      if new_word.split("").sort == @word.split("").sort
-        matched_words << new_word 
+  def match(anagram_words)
+    # @word.each do |words|
+    #   if words.sort == @words.sort
+    #     p words
+    #   end
+    # end
+    match_words = []
+    anagram_words.each do |words|
+      if words.split(' ').sort == @word.split(' ').sort
+        match_words << words 
       end 
     end 
-    matched_words
+    match_words
   end
 
 end
