@@ -7,11 +7,6 @@ class Anagram
   end
   
   def match(anagram_words)
-    # @word.each do |words|
-    #   if words.sort == @words.sort
-    #     p words
-    #   end
-    # end
     match_words = []
     anagram_words.each do |words|
       if words.split(' ').sort == @word.split(' ').sort
