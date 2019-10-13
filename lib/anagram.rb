@@ -9,7 +9,7 @@ class Anagram
   def match
     @word.each do |words|
       words
-  
+    end
   end
 
 end
